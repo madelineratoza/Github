@@ -1,6 +1,6 @@
 ---
 title: "Introduction to GitHub"
-author: "Your Name"
+author: Madeline Ratoza
 format:
   html:
     theme: darkly
