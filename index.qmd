@@ -1,0 +1,299 @@
+---
+title: "Introduction to GitHub"
+author: "Your Name"
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    code-fold: false
+    self-contained: true
+editor: visual
+---
+
+## Introduction to GitHub
+
+GitHub is a platform that allows people to store, manage, and collaborate on code online. It is built on top of a tool called Git, which is a version control system.
+
+Version control means that Git tracks every change made to a project over time, allowing users to:
+
+-   See what changed
+-   Go back to earlier versions
+-   Work with others without overwriting each other's work
+
+You can think of GitHub as a shared workspace for code projects, similar to how Google Docs allows multiple people to collaborate on documents.
+
+------------------------------------------------------------------------
+
+## Key Concepts
+
+### Repository (Repo)
+
+A **repository** is a project folder stored on GitHub. It contains the files that make up a project and the full history of changes made to those files.
+
+A repository may include:
+
+-   Code files
+-   Data files
+-   Documentation
+-   Analysis scripts
+-   The complete history of edits
+
+For example, a research repository might contain:
+
+-   `analysis.R`
+-   `data_cleaning.py`
+-   `figures/`
+-   `README.md`
+
+------------------------------------------------------------------------
+
+### Git
+
+Git is the system that tracks changes in a project. When someone edits a file, Git records:
+
+-   What changed
+-   Who made the change
+-   When the change happened
+
+This makes it easy to track progress and revert mistakes if necessary.
+
+------------------------------------------------------------------------
+
+### Commits
+
+A commit is a saved snapshot of changes made to the project.
+
+Each commit includes a short message describing the update, such as:
+
+> "Added code to generate county population map"
+
+Commits create checkpoints in the project's history.
+
+------------------------------------------------------------------------
+
+### Push and Pull
+
+These terms describe how changes move between a user's computer and GitHub.
+
+**Push**
+
+Send local changes from your computer to the GitHub repository.
+
+**Pull**
+
+Download the latest version of the repository from GitHub.
+
+These actions help ensure collaborators are working with the most up-to-date files.
+
+------------------------------------------------------------------------
+
+### Branches
+
+A branch allows collaborators to create a separate version of the project to test new ideas or make updates without affecting the main project.
+
+For example:
+
+-   `main` branch — stable version of the project
+-   `analysis-update` branch — experimental changes
+
+Branches allow multiple collaborators to work independently.
+
+------------------------------------------------------------------------
+
+### Pull Requests
+
+A pull request is a request to merge changes from one branch into another (usually into the main branch).
+
+Pull requests allow collaborators to:
+
+-   Review code
+-   Suggest changes
+-   Discuss updates
+-   Approve contributions before merging them
+
+------------------------------------------------------------------------
+
+## How GitHub Supports Collaboration
+
+GitHub supports collaborative work in several ways.
+
+### Shared Repository
+
+All collaborators work from the same central repository rather than sharing files by email.
+
+------------------------------------------------------------------------
+
+### Version Tracking
+
+Git records every change, allowing users to revert to previous versions if necessary.
+
+------------------------------------------------------------------------
+
+### Transparent Contributions
+
+GitHub shows who made changes, what changed, and when it happened.
+
+------------------------------------------------------------------------
+
+### Code Review
+
+Pull requests allow teams to review code before it becomes part of the main project.
+
+------------------------------------------------------------------------
+
+### Documentation and Communication
+
+Repositories often include:
+
+-   `README.md` files explaining the project
+-   Issue trackers for bugs or tasks
+-   Discussion threads
+
+------------------------------------------------------------------------
+
+## Example Workflow
+
+A typical GitHub collaboration might look like this:
+
+1.  A repository is created on GitHub.
+2.  Collaborators clone the repository to their computers.
+3.  A collaborator writes or edits code.
+4.  They commit their changes.
+5.  They push the update to GitHub.
+6.  A pull request is opened to merge the changes.
+7.  Collaborators review and approve the changes.
+8.  The update is merged into the main branch.
+
+------------------------------------------------------------------------
+
+## Example Uses in Research
+
+GitHub is widely used in research to:
+
+-   Share analysis code for reproducibility
+-   Collaborate on data analysis pipelines
+-   Maintain teaching materials
+-   Develop software tools or packages
+-   Archive code associated with publications
+
+For example, a GIS-based health equity project might share:
+
+-   Data cleaning scripts
+-   Spatial analysis code
+-   Figure generation scripts
+-   Documentation explaining the workflow
+
+------------------------------------------------------------------------
+
+In summary: GitHub is a platform that allows individuals and teams to store code, track changes, and collaborate on projects in an organized and transparent way.
+
+## Setting Up a GitHub Profile
+
+Before using GitHub to share or collaborate on code, you will need to create and configure a GitHub account.
+
+### 1. Create a GitHub Account
+
+Go to:
+
+<https://github.com>
+
+Click **Sign Up** and create an account using your email address. During registration you will choose:
+
+-   A **username**
+-   A **password**
+-   Your preferred email for notifications
+
+Your username will become part of your GitHub profile URL:
+
+```         
+https://github.com/yourusername
+```
+
+Choose a username you are comfortable using professionally.
+
+------------------------------------------------------------------------
+
+### 2. Complete Your Profile
+
+Once your account is created, you can edit your profile by clicking your avatar in the top right corner and selecting **Your Profile**.
+
+Helpful profile elements include:
+
+-   **Profile photo** – helps collaborators recognize you
+-   **Name** – your real name
+-   **Bio** – a short description of your work or interests
+-   **Institution or organization**
+-   **Location**
+-   **Links** (personal website, Google Scholar, ORCID, etc.)
+
+Example bio:
+
+> Health equity researcher using GIS and data science to study access to rehabilitation services.
+
+------------------------------------------------------------------------
+
+### 3. Add a Profile README (Optional but Useful)
+
+GitHub allows users to create a **profile README** that appears on their profile page.
+
+To do this:
+
+1.  Create a repository with the **same name as your GitHub username**
+2.  Add a file named `README.md`
+3.  Use Markdown to describe your work, projects, or interests
+
+Many researchers use their profile README to share:
+
+-   Current research projects
+-   Programming languages or tools
+-   Publications
+-   Links to datasets or repositories
+
+------------------------------------------------------------------------
+
+### 4. Set Up Git on Your Computer
+
+If you plan to upload code from your computer, you will also need to install **Git**.
+
+Download Git from:
+
+<https://git-scm.com>
+
+After installation, configure your name and email in the terminal:
+
+``` bash
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+```
+
+This ensures your commits are properly attributed to you.
+
+------------------------------------------------------------------------
+
+### 5. Connecting GitHub to Your Computer
+
+There are two common ways to connect GitHub to your computer:
+
+**HTTPS (simpler for beginners)**\
+Uses your GitHub login credentials when pushing changes.
+
+**SSH (more advanced)**\
+Uses cryptographic keys to authenticate automatically.
+
+Most beginners start with HTTPS and later switch to SSH if needed.
+
+------------------------------------------------------------------------
+
+### Summary
+
+Setting up GitHub involves:
+
+1.  Creating an account
+2.  Completing your profile
+3.  (Optional) Creating a profile README
+4.  Installing Git on your computer
+5.  Connecting Git to your GitHub account
+
+Once your profile is set up, you can begin creating repositories and sharing code with collaborators.
